@@ -41,19 +41,75 @@
     <script>
         let x=document.querySelectorAll('h1')
         console.log(x) -->
-        <script>
-    const t = ['vinny','vasu','chakri']
-    for(let i=0; i<t.length; i++){
-    let tt=document.createElement("h1")
-    tt.className="a"
-    tt.textContent=t[i];
-    console.log(tt)
-    }
-    </script>
+    // <script>
+    // const t = ['vinny','vasu','chakri']
+    // for(let i=0; i<t.length; i++){
+    // let tt=document.createElement("h1")
+    // tt.className="a"
+    // tt.textContent=t[i];
+    // console.log(tt)
+    // }
 
-   
-    
-    
+//     let title
+// for(let i=0; i<3; i++){
+// title=document.createElement('h2')
+// title.className="tt"
+// title.textContent=i
+// console.log(title)
+// }
+
+// const titles =["vinny" ,"sri" , "chakri"]
+// for(let i=0; i<titles.length; i++){
+// let title=document.createElement('h1');
+// title.textContent ="a"
+// title.textContent = titles[i]
+// console.log(title)
+// }
+
+
+ //</script>
+<!-- <h1>Removing Child Node</h1>
+<h2>I am vinesh</h2>
+<ul>
+    <li>v</li>
+    <li>vinny</li>
+    <li>ch</li>
+</ul>
+
+<script>
+    const ul = document.querySelector('ul');
+    const lists = document.querySelectorAll('li');
+
+    for (const list of lists) {
+        console.log(`Removing: ${list.textContent}`); // Fixed: Added backticks
+        ul.removeChild(list);
+    }
+</script> -->
+<div>
+
+</div>
+<div id="a"> 
+    <h1>sia</h1>
+    <h1>ria</h1>
+</div>
+<div id="b">
+    <h1>ram</h1>
+    <h1>sam</h1>
+</div>
+
+<script>
+    let n=document.createElement("h2")
+    n.textContent="Sai is the team leader"
+    //get the parent element
+    let p=document.getElementById("b")
+    console.log(p.innerText)
+    //To append new element to the parent node
+    p.appendChild(n)
+    //log the inner text of the parent
+    console.log(p)
+    console.log(p.innerText)
 </script>
+
+
 </body>
 </html>
