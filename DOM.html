@@ -85,31 +85,104 @@
         ul.removeChild(list);
     }
 </script> -->
-<div>
 
-</div>
-<div id="a"> 
-    <h1>sia</h1>
-    <h1>ria</h1>
+
+
+<!-- <div id="a"> 
+    <h1>ravi</h1>
+    <h1 id ="ram">ram</h1>
 </div>
 <div id="b">
-    <h1>ram</h1>
     <h1>sam</h1>
+    <h1>venkat</h1>
 </div>
 
 <script>
-    let n=document.createElement("h2")
-    n.textContent="Sai is the team leader"
-    //get the parent element
-    let p=document.getElementById("b")
-    console.log(p.innerText)
-    //To append new element to the parent node
-    p.appendChild(n)
-    //log the inner text of the parent
-    console.log(p)
-    console.log(p.innerText)
+    // let n=document.createElement("h2")
+    // n.textContent="RAHUL"
+    // //get the parent element
+    // let p=document.getElementById('a')
+    // let l=document.getElementById('r')
+    // p.insertBefore(n,l)
+    // document.write(p)
+    // console.log(p)
+
+  let n=document.createElement('h1')
+  n.innerText="rahul"
+
+  let p=document.getElementbyId('a')
+  let l=document.getElementbyId('r')
+
+  let nn= document.createElementId('h1')
+  nn.innerText ="pavani"
+  let pp=document.getElementById('a')
+  let lists=document.getElementById('rr')
+  pp.insertBefore(nn,ll)
+</script> -->
+
+<!-- <div id="a"> 
+    <h1>ravi</h1>
+    <h1 id="ram">ram</h1>
+</div>
+<div id="b">
+    <h1>sam</h1>
+    <h1>venkat</h1>
+</div>
+
+<script>
+  // Create a new <h1> element
+  let n = document.createElement('h1');
+  n.innerText = "rahul";
+
+  // Get the parent element and the reference for inserting before
+  let p = document.getElementById('a');
+  let l = document.getElementById('ram');
+
+  p.insertBefore(n, l);
+
+  let nn = document.createElement('h1');
+  nn.innerText = "pavani";
+
+  let pp = document.getElementById('a');
+  let lists = document.getElementById('ram'); 
+
+  pp.insertBefore(nn, lists);
+</script> -->
+
+<!-- <div id="a"> 
+    <h1 id="re">ravi</h1>
+    <h1>ram</h1>
+</div>
+<div id="b">
+    <h1>sam</h1>
+    <h1>venkat</h1>
+</div>
+
+<script>
+    let n=document.getElementById('a')
+    let l=document.getElementById('re')
+    console.log(l)
+    n.removeChild(l) -->
+
+    <div id="a"> 
+        <h1 id="re">ravi</h1>
+        <h1>ram</h1>
+    </div>
+    <div id="b">
+        <h1>sam</h1>
+        <h1>venkat</h1>
+    </div>
+    
+    <script>
+        let n=document.crerateElement('h1')
+        n.innerText="Version It"
+        let p = document.getElementBYId("a")
+        n.replace(l)
+        console.log(p)
+     
+    
+
+
 </script>
-
-
 </body>
 </html>
