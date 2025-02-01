@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         let age = prompt("Enter the age");
+// let citizen = prompt("Enter the citizenship");
+// let cTest = prompt("Citizenship result");
+
+// if((age >= 18) && (citizen=="Indian"||cTest =="Passed")){
+//     document.write("Can eligible for voting");
+// }
+// else{
+//     document.write("Cannot vote");
+// }
+
+// a customer who spend more than rs 100 get a 20percent discount
+// a customer who spend more than rs 50 but less than r equal to rs100 get a 10 percent discount
+//if the customer is a prium member, they receive an extra 5%discount
+// Get the spending amount and premium membership status from the user
+let amountSpent = parseFloat(prompt("Enter the amount spent (in Rs):"));
+let isPremiumMember = prompt("Are you a premium member? (yes/no)").toLowerCase();
+let discount = 0;
+if (amountSpent > 100) {
+    discount = 20;
+} else if (amountSpent > 50) {
+    discount = 10; 
+}
+if (isPremiumMember === "yes") {
+    discount += 5; 
+}
+let finalAmount = amountSpent - (amountSpent * (discount / 100));
+document.write("Total amount after discount: Rs " + finalAmount.toFixed(2));
+
+    </script>
+</body>
+</html>
