@@ -1,48 +1,20 @@
-return
-div style={{backgroudColor:theme=='light'?'black','white',}}
-<h1
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
+import ChildA from './ChildA';
+import ChildB from './ChildB.js';
 
-// function App() {
-//   const [count, setCount] = useState(0);
+const Parent = () => {
+  const [count, setCount] = useState(0);
 
-//   return (
-//     <div>
-//       <h1>{count}</h1>
-//       <button onClick={() => setCount(count + 1)}>Increment</button>
-//       <button onClick={() => setCount(count - 1)}>Decrement</button>
-//     </div>
-//   );
-// }
+  const increment = () => {
+    setCount(c => c + 1);
+  };
 
-// export default App;
+  return (
+    <div>
+      <ChildA />
+      <ChildB count={count} increment={increment} />
+    </div>
+  );
+};
 
-
-// import React from 'react';
-// import Greeting from './Greeting';  // Make sure the file name matches the correct casing
-// import './App.css';
-
-// function App() {
-//   const isLoggedIn = false; 
-
-//   return (
-//     <div className="App">
-//       <Greeting isLoggedIn={isLoggedIn} />
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
-// // const Welcome = () => <h1 className='message'>Hello Sai</h1>;
-
-// // function App() {
-// //   return (
-// //     <div className='App'>
-// //       <Welcome />
-// //     </div>
-// //   );
-// // }
-
-// //  export default Welcome;
+export default Parent;
