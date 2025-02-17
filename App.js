@@ -1,3 +1,67 @@
+// function App(){
+//     const handleClick=()=>{
+
+//     };
+//     return(
+//         <button onClick={handleClick}>Click Me</button>
+//     )
+// }
+// export default App;
+
+// import React, { useState } from 'react';
+
+// function App() {
+//   // Declare a state variable to hold the text input
+//   const [text, setText] = useState('');
+
+//   const handleChange = (event) => {
+//     // Update the state when the input changes
+//     setText(event.target.value);
+//   };
+
+//   return (
+//     <div>
+//       <input type="text" value={text} onChange={handleChange} />
+//       <p>Your text: {text}</p>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+import React, { useState } from "react";
+
+function App() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  return (
+    <div>
+      <button
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        style={{
+          backgroundColor: isHovered ? 'lightblue' : 'lightgray',
+          color: isHovered ? 'white' : 'black',
+        }}
+      >
+        Hover
+      </button>
+
+      {isHovered && <p>Mouse is over the button</p>}
+    </div>
+  );
+}
+
+export default App;
+
 
 // import React, { useReducer } from 'react';
 // import './App.css';  // Importing the CSS file
