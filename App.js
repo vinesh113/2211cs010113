@@ -1,3 +1,20 @@
+import React,{useState} from 'react';
+import './App.css';
+function App(){
+  const[key, setKey]=useState("");
+  const handleKeyDown=(event)=>{
+    setKey(event.key);
+  };
+  return(
+    <div className="app">
+      <h1>Welcome to vinesh solutions</h1>
+      {key && <h2>Pressed key:{key}</h2>}
+      <input type="text" onKeyDown={handleKeyDown} placeholder="pressed here"/>
+
+    </div>
+  )
+}
+export default App;
 // function App(){
 //     const handleClick=()=>{
 
@@ -29,38 +46,38 @@
 
 // export default App;
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
-function App() {
-  const [isHovered, setIsHovered] = useState(false);
+// function App() {
+//   const [isHovered, setIsHovered] = useState(false);
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
+//   const handleMouseEnter = () => {
+//     setIsHovered(true);
+//   };
 
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
+//   const handleMouseLeave = () => {
+//     setIsHovered(false);
+//   };
 
-  return (
-    <div>
-      <button
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        style={{
-          backgroundColor: isHovered ? 'lightblue' : 'lightgray',
-          color: isHovered ? 'white' : 'black',
-        }}
-      >
-        Hover
-      </button>
+//   return (
+//     <div>
+//       <button
+//         onMouseEnter={handleMouseEnter}
+//         onMouseLeave={handleMouseLeave}
+//         style={{
+//           backgroundColor: isHovered ? 'lightblue' : 'lightgray',
+//           color: isHovered ? 'white' : 'black',
+//         }}
+//       >
+//         Hover
+//       </button>
 
-      {isHovered && <p>Mouse is over the button</p>}
-    </div>
-  );
-}
+//       {isHovered && <p>Mouse is over the button</p>}
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;
 
 
 // import React, { useReducer } from 'react';
